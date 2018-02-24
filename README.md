@@ -13,13 +13,14 @@ Ore and Schematic spawning,
 More skeleton schematics
 
 ## Tools
-![Tools](https://github.com/TekhnaeRaav/Fossils/blob/master/Tools_screenshot.png)
+![Tools](promo/Tools_screenshot.png)
 
 ## Skeletons
 
 ### T Rex
-![T Rex](https://github.com/TekhnaeRaav/Fossils/blob/master/TR_Screenshot.png)
+![T Rex](promo/TR_Screenshot.png)
 
 
 ### Leviathan
-![Leviathan](https://github.com/TekhnaeRaav/Fossils/blob/master/Leviathan_Screenshot.png)
+![Leviathan](promo/Leviathan_Screenshot.png)
+
