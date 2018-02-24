@@ -5,11 +5,33 @@ minetest.register_ore({
 	ore_type       = "scatter",
 	ore            = "fossils:fossil_trillobite",
 	wherein        = "default:stone",
-	clust_scarcity = 18 * 18 * 18,
+	clust_scarcity = 13 * 13 * 13,
 	clust_num_ores = 5,
-	clust_size     = 1,
+	clust_size     = 5,
 	y_min          = 1025,
 	y_max          = 31000,
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "fossils:fossil_trillobite",
+	wherein        = "default:stone",
+	clust_scarcity = 15 * 15 * 15,
+	clust_num_ores = 3,
+	clust_size     = 5,
+	y_min          = -255,
+	y_max          = -64,
+})
+
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "fossils:fossil_trillobite",
+	wherein        = "default:stone",
+	clust_scarcity = 13 * 13 * 13,
+	clust_num_ores = 5,
+	clust_size     = 5,
+	y_min          = -31000,
+	y_max          = -256,
 })
 
 minetest.register_node("fossils:fossil_trillobite", {
@@ -93,4 +115,64 @@ minetest.register_tool("fossils:sword_bone", {
 		damage_groups = {fleshy=3},
 	},
 	sound = {breaks = "default_tool_breaks"},
+})
+
+--Crafting
+
+minetest.register_craft( {
+	type = "shapeless",
+	output = "fossils:bone_block",
+	recipe = {"fossils:bone", "fossils:bone",
+						"fossils:bone", "fossils:bone"},
+})
+
+minetest.register_craft( {
+	type = "shapeless",
+	output = "fossils:bone 4",
+	recipe = {"fossils:bone_block"},
+})
+
+minetest.register_craft({
+	output = 'default:pick_bone',
+	recipe = {
+		{'default:bone', 'default:bone', 'default:bone'},
+		{'', 'group:stick', ''},
+		{'', 'group:stick', ''},
+	}
+})
+
+minetest.register_craft({
+	output = 'default:shovel_bone',
+	recipe = {
+		{'default:bone'},
+		{'group:stick'},
+		{'group:stick'},
+	}
+})
+
+minetest.register_craft({
+	output = 'default:axe_bone',
+	recipe = {
+		{'default:bone', 'default:bone'},
+		{'default:bone', 'group:stick'},
+		{'', 'group:stick'},
+	}
+})
+
+minetest.register_craft({
+	output = 'default:axe_bone',
+	recipe = {
+		{'default:bone', 'default:bone'},
+		{'group:stick', 'default:bone'},
+		{'group:stick', ''},
+	}
+})
+
+minetest.register_craft({
+	output = 'default:sword_bone',
+	recipe = {
+		{'default:bone'},
+		{'default:bone'},
+		{'group:stick'},
+	}
 })
