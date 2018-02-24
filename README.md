@@ -6,7 +6,6 @@ This Mod _Will_ Include: All bone tools, a bone block, ores underground(3-5 text
 I'll be glad to consider any ideas or contributions!
 
 ## WIP
-Bone Hoe,
 
 Ore and Schematic spawning,
 

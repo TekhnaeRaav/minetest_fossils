@@ -1,4 +1,4 @@
---Fossils/Ores
+---Fossils/Ores---
 
 --Trillobite
 minetest.register_ore({
@@ -6,32 +6,10 @@ minetest.register_ore({
 	ore            = "fossils:fossil_trillobite",
 	wherein        = "default:stone",
 	clust_scarcity = 13 * 13 * 13,
-	clust_num_ores = 5,
+	clust_num_ores = 2,
 	clust_size     = 5,
-	y_min          = 1025,
-	y_max          = 31000,
-})
-
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "fossils:fossil_trillobite",
-	wherein        = "default:stone",
-	clust_scarcity = 15 * 15 * 15,
-	clust_num_ores = 3,
-	clust_size     = 5,
-	y_min          = -255,
+	y_min          = -500,
 	y_max          = -64,
-})
-
-minetest.register_ore({
-	ore_type       = "scatter",
-	ore            = "fossils:fossil_trillobite",
-	wherein        = "default:stone",
-	clust_scarcity = 13 * 13 * 13,
-	clust_num_ores = 5,
-	clust_size     = 5,
-	y_min          = -31000,
-	y_max          = -256,
 })
 
 minetest.register_node("fossils:fossil_trillobite", {
@@ -41,10 +19,30 @@ minetest.register_node("fossils:fossil_trillobite", {
 	drop = 'fossils:bone',
 	sounds = default.node_sound_stone_defaults(),
 })
------
 
 
---Material
+--Tooth
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "fossils:fossil_tooth",
+	wherein        = "default:stone",
+	clust_scarcity = 9 * 9 * 9,
+	clust_num_ores = 1,
+	clust_size     = 5,
+	y_min          = -400,
+	y_max          = -42,
+})
+
+minetest.register_node("fossils:fossil_tooth", {
+	description = "Tooth Fossil",
+	tiles = {"default_stone.png^fossils_fossil_tooth.png"},
+	groups = {cracky = 3},
+	drop = 'fossils:bone',
+	sounds = default.node_sound_stone_defaults(),
+})
+
+
+---Materials---
 minetest.register_craftitem("fossils:bone", {
 	description = "bone",
 	inventory_image = "fossils_bone.png"
@@ -59,7 +57,9 @@ minetest.register_node("fossils:bone_block", {
 })
 
 
---Tools
+---Tools---
+
+--pickaxe
 minetest.register_tool("fossils:pick_bone", {
 	description = "Bone Pickaxe",
 	inventory_image = "fossils_tool_bonepick.png",
@@ -73,7 +73,7 @@ minetest.register_tool("fossils:pick_bone", {
 	},
 	sound = {breaks = "default_tool_breaks"},
 })
-
+--shovel
 minetest.register_tool("fossils:shovel_bone", {
 	description = "Bone Shovel",
 	inventory_image = "fossils_tool_boneshovel.png",
@@ -88,7 +88,7 @@ minetest.register_tool("fossils:shovel_bone", {
 	},
 	sound = {breaks = "default_tool_breaks"},
 })
-
+--axe
 minetest.register_tool("fossils:axe_bone", {
 	description = "Bone Axe",
 	inventory_image = "fossils_tool_boneaxe.png",
@@ -102,7 +102,7 @@ minetest.register_tool("fossils:axe_bone", {
 	},
 	sound = {breaks = "default_tool_breaks"},
 })
-
+--sword
 minetest.register_tool("fossils:sword_bone", {
 	description = "Bone Sword",
 	inventory_image = "fossils_tool_bonesword.png",
@@ -116,8 +116,15 @@ minetest.register_tool("fossils:sword_bone", {
 	},
 	sound = {breaks = "default_tool_breaks"},
 })
+--hoe
+farming.register_hoe(":farming:hoe_bone", {
+	description = "Bone Hoe",
+	inventory_image = "fossils_farming_tool_bonehoe.png",
+	max_uses = 220,
+	material = "fossils:bone"
+})
 
---Crafting
+---Crafting---
 
 minetest.register_craft( {
 	type = "shapeless",
