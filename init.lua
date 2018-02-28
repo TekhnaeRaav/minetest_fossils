@@ -8,8 +8,8 @@ minetest.register_ore({
 	clust_scarcity = 13 * 13 * 13,
 	clust_num_ores = 2,
 	clust_size     = 5,
-	y_min          = -500,
-	y_max          = -64,
+	y_min          = -1000,
+	y_max          = -180,
 })
 
 minetest.register_node("fossils:fossil_trillobite", {
@@ -19,7 +19,7 @@ minetest.register_node("fossils:fossil_trillobite", {
 	drop = 'fossils:bone',
 	sounds = default.node_sound_stone_defaults(),
 })
-
+-----
 
 --Tooth
 minetest.register_ore({
@@ -29,8 +29,8 @@ minetest.register_ore({
 	clust_scarcity = 9 * 9 * 9,
 	clust_num_ores = 1,
 	clust_size     = 5,
-	y_min          = -400,
-	y_max          = -42,
+	y_min          = -500,
+	y_max          = -38,
 })
 
 minetest.register_node("fossils:fossil_tooth", {
