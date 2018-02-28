@@ -9,7 +9,7 @@ I'll be glad to consider any ideas or contributions!
 
 Ore and Schematic spawning,
 
-More skeleton schematics
+More skeleton schematics [help wanted!](https://github.com/TekhnaeRaav/Fossils/issues/2)
 
 ## Tools
 ![Tools](promo/Tools_screenshot.png)
