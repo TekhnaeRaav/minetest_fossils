@@ -1,5 +1,5 @@
 # Fossils
-Minetest mod to add bones to the game.(WIP)
+Minetest mod to add bones to the game.
 
 This Mod _Will_ Include: All bone tools, a bone block, ores underground(3-5 textures?)and schematics for large skeleton structures to spawn underground.
 
