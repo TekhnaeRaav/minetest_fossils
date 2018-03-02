@@ -8,7 +8,7 @@ minetest.register_ore({
 	clust_scarcity = 13 * 13 * 13,
 	clust_num_ores = 2,
 	clust_size     = 5,
-	y_min          = -1000,
+	y_min          = -31000,
 	y_max          = -180,
 })
 
@@ -40,6 +40,27 @@ minetest.register_node("fossils:fossil_tooth", {
 	drop = 'fossils:bone',
 	sounds = default.node_sound_stone_defaults(),
 })
+
+--Skull
+minetest.register_ore({
+	ore_type       = "scatter",
+	ore            = "fossils:fossil_skull",
+	wherein        = "default:stone",
+	clust_scarcity = 14 * 14 * 14,
+	clust_num_ores = 1,
+	clust_size     = 3,
+	y_min          = -31000,
+	y_max          = -500,
+})
+
+minetest.register_node("fossils:fossil_skull", {
+	description = "Skull Fossil",
+	tiles = {"default_stone.png^fossils_fossil_skull.png"},
+	groups = {cracky = 3},
+	drop = 'fossils:bone',
+	sounds = default.node_sound_stone_defaults(),
+})
+-----
 
 
 ---Materials---
