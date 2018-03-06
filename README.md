@@ -23,3 +23,6 @@ More skeleton schematics [help wanted!](https://github.com/TekhnaeRaav/Fossils/i
 ### Leviathan
 ![Leviathan](promo/Leviathan_Screenshot.png)
 
+## Tool Detail
+
+The bone tools are tough, their durability is equal to bronze tools, but they break blocks only as fast as stone tools. Bone is light which means their punch interval is very fast, and while the sword does not have more player damage than anything but wood, it has the fastest punch interval of all the tools.
